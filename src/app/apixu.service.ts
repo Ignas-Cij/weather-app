@@ -11,7 +11,7 @@ export class ApixuService {
   getWeather(location: string){
       const path = `http://api.weatherstack.com/current?
       access_key=23f8c7688b8b65c86bf439e521169c24
-      &query=New%20York`;
+      &query=${location}`;
       return this.http.get(path);
   } 
 }
