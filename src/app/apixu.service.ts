@@ -9,7 +9,9 @@ export class ApixuService {
   constructor(private http: HttpClient) { }
 
   getWeather(location: string){
-      const path = `http://api.weatherapi.com/v1/current.json?key=370a7158e28244f384e175732212111&q=${location}`;
+      const path = `http://api.weatherstack.com/current
+      ? access_key = fa2bb5cac9a4eff4e13ee93bc80a6cd2
+      & query = ${location}`;
       return this.http.get(path);
   } 
 }
