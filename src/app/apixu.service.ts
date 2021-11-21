@@ -9,9 +9,8 @@ export class ApixuService {
   constructor(private http: HttpClient) { }
 
   getWeather(location: string){
-      const path = `http://api.weatherstack.com/current?
-      access_key=23f8c7688b8b65c86bf439e521169c24
-      &query=${location}`;
+      const path = `http://api.weatherstack.com/current?access_key=23f8c7688b8b65c86bf439e521169c24&query=${location}`;
       return this.http.get(path);
   } 
 }
+//New%20York
